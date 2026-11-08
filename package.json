@@ -1,0 +1,10 @@
+{
+  "name": "le-labo-jazz",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "check": "node --check docs/assets/app.js && python3 scripts/check.py && node scripts/check-music.cjs",
+    "preview": "python3 -m http.server 8090 --directory docs"
+  }
+}

@@ -1,0 +1,44 @@
+# Fichiers système
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Dépendances
+node_modules/
+.venv/
+venv/
+
+# Variables et secrets locaux
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Fichiers générés et caches
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+coverage/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.sites-runtime/
+
+# Journaux
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Éditeurs et fichiers temporaires
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.tmp
