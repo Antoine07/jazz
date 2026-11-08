@@ -1,0 +1,1943 @@
+{
+  "instrument": "tenor-bb",
+  "notation": "written",
+  "sounding_midi_offset": -14,
+  "scales": {
+    "C": {
+      "major": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "B"
+      ],
+      "naturalMinor": [
+        "C",
+        "D",
+        "Eb",
+        "F",
+        "G",
+        "Ab",
+        "Bb"
+      ],
+      "harmonicMinor": [
+        "C",
+        "D",
+        "Eb",
+        "F",
+        "G",
+        "Ab",
+        "B"
+      ],
+      "melodicMinor": [
+        "C",
+        "D",
+        "Eb",
+        "F",
+        "G",
+        "A",
+        "B"
+      ]
+    },
+    "G": {
+      "major": [
+        "G",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F#"
+      ],
+      "naturalMinor": [
+        "G",
+        "A",
+        "Bb",
+        "C",
+        "D",
+        "Eb",
+        "F"
+      ],
+      "harmonicMinor": [
+        "G",
+        "A",
+        "Bb",
+        "C",
+        "D",
+        "Eb",
+        "F#"
+      ],
+      "melodicMinor": [
+        "G",
+        "A",
+        "Bb",
+        "C",
+        "D",
+        "E",
+        "F#"
+      ]
+    },
+    "D": {
+      "major": [
+        "D",
+        "E",
+        "F#",
+        "G",
+        "A",
+        "B",
+        "C#"
+      ],
+      "naturalMinor": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "Bb",
+        "C"
+      ],
+      "harmonicMinor": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "Bb",
+        "C#"
+      ],
+      "melodicMinor": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "B",
+        "C#"
+      ]
+    },
+    "A": {
+      "major": [
+        "A",
+        "B",
+        "C#",
+        "D",
+        "E",
+        "F#",
+        "G#"
+      ],
+      "naturalMinor": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "harmonicMinor": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G#"
+      ],
+      "melodicMinor": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F#",
+        "G#"
+      ]
+    },
+    "E": {
+      "major": [
+        "E",
+        "F#",
+        "G#",
+        "A",
+        "B",
+        "C#",
+        "D#"
+      ],
+      "naturalMinor": [
+        "E",
+        "F#",
+        "G",
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "harmonicMinor": [
+        "E",
+        "F#",
+        "G",
+        "A",
+        "B",
+        "C",
+        "D#"
+      ],
+      "melodicMinor": [
+        "E",
+        "F#",
+        "G",
+        "A",
+        "B",
+        "C#",
+        "D#"
+      ]
+    },
+    "B": {
+      "major": [
+        "B",
+        "C#",
+        "D#",
+        "E",
+        "F#",
+        "G#",
+        "A#"
+      ],
+      "naturalMinor": [
+        "B",
+        "C#",
+        "D",
+        "E",
+        "F#",
+        "G",
+        "A"
+      ],
+      "harmonicMinor": [
+        "B",
+        "C#",
+        "D",
+        "E",
+        "F#",
+        "G",
+        "A#"
+      ],
+      "melodicMinor": [
+        "B",
+        "C#",
+        "D",
+        "E",
+        "F#",
+        "G#",
+        "A#"
+      ]
+    },
+    "F#": {
+      "major": [
+        "F#",
+        "G#",
+        "A#",
+        "B",
+        "C#",
+        "D#",
+        "E#"
+      ],
+      "naturalMinor": [
+        "F#",
+        "G#",
+        "A",
+        "B",
+        "C#",
+        "D",
+        "E"
+      ],
+      "harmonicMinor": [
+        "F#",
+        "G#",
+        "A",
+        "B",
+        "C#",
+        "D",
+        "E#"
+      ],
+      "melodicMinor": [
+        "F#",
+        "G#",
+        "A",
+        "B",
+        "C#",
+        "D#",
+        "E#"
+      ]
+    },
+    "Db": {
+      "major": [
+        "Db",
+        "Eb",
+        "F",
+        "Gb",
+        "Ab",
+        "Bb",
+        "C"
+      ],
+      "naturalMinor": [
+        "Db",
+        "Eb",
+        "Fb",
+        "Gb",
+        "Ab",
+        "Bbb",
+        "Cb"
+      ],
+      "harmonicMinor": [
+        "Db",
+        "Eb",
+        "Fb",
+        "Gb",
+        "Ab",
+        "Bbb",
+        "C"
+      ],
+      "melodicMinor": [
+        "Db",
+        "Eb",
+        "Fb",
+        "Gb",
+        "Ab",
+        "Bb",
+        "C"
+      ]
+    },
+    "Ab": {
+      "major": [
+        "Ab",
+        "Bb",
+        "C",
+        "Db",
+        "Eb",
+        "F",
+        "G"
+      ],
+      "naturalMinor": [
+        "Ab",
+        "Bb",
+        "Cb",
+        "Db",
+        "Eb",
+        "Fb",
+        "Gb"
+      ],
+      "harmonicMinor": [
+        "Ab",
+        "Bb",
+        "Cb",
+        "Db",
+        "Eb",
+        "Fb",
+        "G"
+      ],
+      "melodicMinor": [
+        "Ab",
+        "Bb",
+        "Cb",
+        "Db",
+        "Eb",
+        "F",
+        "G"
+      ]
+    },
+    "Eb": {
+      "major": [
+        "Eb",
+        "F",
+        "G",
+        "Ab",
+        "Bb",
+        "C",
+        "D"
+      ],
+      "naturalMinor": [
+        "Eb",
+        "F",
+        "Gb",
+        "Ab",
+        "Bb",
+        "Cb",
+        "Db"
+      ],
+      "harmonicMinor": [
+        "Eb",
+        "F",
+        "Gb",
+        "Ab",
+        "Bb",
+        "Cb",
+        "D"
+      ],
+      "melodicMinor": [
+        "Eb",
+        "F",
+        "Gb",
+        "Ab",
+        "Bb",
+        "C",
+        "D"
+      ]
+    },
+    "Bb": {
+      "major": [
+        "Bb",
+        "C",
+        "D",
+        "Eb",
+        "F",
+        "G",
+        "A"
+      ],
+      "naturalMinor": [
+        "Bb",
+        "C",
+        "Db",
+        "Eb",
+        "F",
+        "Gb",
+        "Ab"
+      ],
+      "harmonicMinor": [
+        "Bb",
+        "C",
+        "Db",
+        "Eb",
+        "F",
+        "Gb",
+        "A"
+      ],
+      "melodicMinor": [
+        "Bb",
+        "C",
+        "Db",
+        "Eb",
+        "F",
+        "G",
+        "A"
+      ]
+    },
+    "F": {
+      "major": [
+        "F",
+        "G",
+        "A",
+        "Bb",
+        "C",
+        "D",
+        "E"
+      ],
+      "naturalMinor": [
+        "F",
+        "G",
+        "Ab",
+        "Bb",
+        "C",
+        "Db",
+        "Eb"
+      ],
+      "harmonicMinor": [
+        "F",
+        "G",
+        "Ab",
+        "Bb",
+        "C",
+        "Db",
+        "E"
+      ],
+      "melodicMinor": [
+        "F",
+        "G",
+        "Ab",
+        "Bb",
+        "C",
+        "D",
+        "E"
+      ]
+    }
+  },
+  "cadences": {
+    "C": {
+      "major": [
+        {
+          "root": "D",
+          "quality": "m7",
+          "symbol": "Dm7",
+          "notes": [
+            "D",
+            "F",
+            "A",
+            "C"
+          ]
+        },
+        {
+          "root": "G",
+          "quality": "7",
+          "symbol": "G7",
+          "notes": [
+            "G",
+            "B",
+            "D",
+            "F"
+          ]
+        },
+        {
+          "root": "C",
+          "quality": "maj7",
+          "symbol": "Cmaj7",
+          "notes": [
+            "C",
+            "E",
+            "G",
+            "B"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "D",
+          "quality": "m7b5",
+          "symbol": "Dm7♭5",
+          "notes": [
+            "D",
+            "F",
+            "Ab",
+            "C"
+          ]
+        },
+        {
+          "root": "G",
+          "quality": "7",
+          "symbol": "G7",
+          "notes": [
+            "G",
+            "B",
+            "D",
+            "F"
+          ]
+        },
+        {
+          "root": "C",
+          "quality": "m7",
+          "symbol": "Cm7",
+          "notes": [
+            "C",
+            "Eb",
+            "G",
+            "Bb"
+          ]
+        }
+      ]
+    },
+    "G": {
+      "major": [
+        {
+          "root": "A",
+          "quality": "m7",
+          "symbol": "Am7",
+          "notes": [
+            "A",
+            "C",
+            "E",
+            "G"
+          ]
+        },
+        {
+          "root": "D",
+          "quality": "7",
+          "symbol": "D7",
+          "notes": [
+            "D",
+            "F#",
+            "A",
+            "C"
+          ]
+        },
+        {
+          "root": "G",
+          "quality": "maj7",
+          "symbol": "Gmaj7",
+          "notes": [
+            "G",
+            "B",
+            "D",
+            "F#"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "A",
+          "quality": "m7b5",
+          "symbol": "Am7♭5",
+          "notes": [
+            "A",
+            "C",
+            "Eb",
+            "G"
+          ]
+        },
+        {
+          "root": "D",
+          "quality": "7",
+          "symbol": "D7",
+          "notes": [
+            "D",
+            "F#",
+            "A",
+            "C"
+          ]
+        },
+        {
+          "root": "G",
+          "quality": "m7",
+          "symbol": "Gm7",
+          "notes": [
+            "G",
+            "Bb",
+            "D",
+            "F"
+          ]
+        }
+      ]
+    },
+    "D": {
+      "major": [
+        {
+          "root": "E",
+          "quality": "m7",
+          "symbol": "Em7",
+          "notes": [
+            "E",
+            "G",
+            "B",
+            "D"
+          ]
+        },
+        {
+          "root": "A",
+          "quality": "7",
+          "symbol": "A7",
+          "notes": [
+            "A",
+            "C#",
+            "E",
+            "G"
+          ]
+        },
+        {
+          "root": "D",
+          "quality": "maj7",
+          "symbol": "Dmaj7",
+          "notes": [
+            "D",
+            "F#",
+            "A",
+            "C#"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "E",
+          "quality": "m7b5",
+          "symbol": "Em7♭5",
+          "notes": [
+            "E",
+            "G",
+            "Bb",
+            "D"
+          ]
+        },
+        {
+          "root": "A",
+          "quality": "7",
+          "symbol": "A7",
+          "notes": [
+            "A",
+            "C#",
+            "E",
+            "G"
+          ]
+        },
+        {
+          "root": "D",
+          "quality": "m7",
+          "symbol": "Dm7",
+          "notes": [
+            "D",
+            "F",
+            "A",
+            "C"
+          ]
+        }
+      ]
+    },
+    "A": {
+      "major": [
+        {
+          "root": "B",
+          "quality": "m7",
+          "symbol": "Bm7",
+          "notes": [
+            "B",
+            "D",
+            "F#",
+            "A"
+          ]
+        },
+        {
+          "root": "E",
+          "quality": "7",
+          "symbol": "E7",
+          "notes": [
+            "E",
+            "G#",
+            "B",
+            "D"
+          ]
+        },
+        {
+          "root": "A",
+          "quality": "maj7",
+          "symbol": "Amaj7",
+          "notes": [
+            "A",
+            "C#",
+            "E",
+            "G#"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "B",
+          "quality": "m7b5",
+          "symbol": "Bm7♭5",
+          "notes": [
+            "B",
+            "D",
+            "F",
+            "A"
+          ]
+        },
+        {
+          "root": "E",
+          "quality": "7",
+          "symbol": "E7",
+          "notes": [
+            "E",
+            "G#",
+            "B",
+            "D"
+          ]
+        },
+        {
+          "root": "A",
+          "quality": "m7",
+          "symbol": "Am7",
+          "notes": [
+            "A",
+            "C",
+            "E",
+            "G"
+          ]
+        }
+      ]
+    },
+    "E": {
+      "major": [
+        {
+          "root": "F#",
+          "quality": "m7",
+          "symbol": "F♯m7",
+          "notes": [
+            "F#",
+            "A",
+            "C#",
+            "E"
+          ]
+        },
+        {
+          "root": "B",
+          "quality": "7",
+          "symbol": "B7",
+          "notes": [
+            "B",
+            "D#",
+            "F#",
+            "A"
+          ]
+        },
+        {
+          "root": "E",
+          "quality": "maj7",
+          "symbol": "Emaj7",
+          "notes": [
+            "E",
+            "G#",
+            "B",
+            "D#"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "F#",
+          "quality": "m7b5",
+          "symbol": "F♯m7♭5",
+          "notes": [
+            "F#",
+            "A",
+            "C",
+            "E"
+          ]
+        },
+        {
+          "root": "B",
+          "quality": "7",
+          "symbol": "B7",
+          "notes": [
+            "B",
+            "D#",
+            "F#",
+            "A"
+          ]
+        },
+        {
+          "root": "E",
+          "quality": "m7",
+          "symbol": "Em7",
+          "notes": [
+            "E",
+            "G",
+            "B",
+            "D"
+          ]
+        }
+      ]
+    },
+    "B": {
+      "major": [
+        {
+          "root": "C#",
+          "quality": "m7",
+          "symbol": "C♯m7",
+          "notes": [
+            "C#",
+            "E",
+            "G#",
+            "B"
+          ]
+        },
+        {
+          "root": "F#",
+          "quality": "7",
+          "symbol": "F♯7",
+          "notes": [
+            "F#",
+            "A#",
+            "C#",
+            "E"
+          ]
+        },
+        {
+          "root": "B",
+          "quality": "maj7",
+          "symbol": "Bmaj7",
+          "notes": [
+            "B",
+            "D#",
+            "F#",
+            "A#"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "C#",
+          "quality": "m7b5",
+          "symbol": "C♯m7♭5",
+          "notes": [
+            "C#",
+            "E",
+            "G",
+            "B"
+          ]
+        },
+        {
+          "root": "F#",
+          "quality": "7",
+          "symbol": "F♯7",
+          "notes": [
+            "F#",
+            "A#",
+            "C#",
+            "E"
+          ]
+        },
+        {
+          "root": "B",
+          "quality": "m7",
+          "symbol": "Bm7",
+          "notes": [
+            "B",
+            "D",
+            "F#",
+            "A"
+          ]
+        }
+      ]
+    },
+    "F#": {
+      "major": [
+        {
+          "root": "G#",
+          "quality": "m7",
+          "symbol": "G♯m7",
+          "notes": [
+            "G#",
+            "B",
+            "D#",
+            "F#"
+          ]
+        },
+        {
+          "root": "C#",
+          "quality": "7",
+          "symbol": "C♯7",
+          "notes": [
+            "C#",
+            "E#",
+            "G#",
+            "B"
+          ]
+        },
+        {
+          "root": "F#",
+          "quality": "maj7",
+          "symbol": "F♯maj7",
+          "notes": [
+            "F#",
+            "A#",
+            "C#",
+            "E#"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "G#",
+          "quality": "m7b5",
+          "symbol": "G♯m7♭5",
+          "notes": [
+            "G#",
+            "B",
+            "D",
+            "F#"
+          ]
+        },
+        {
+          "root": "C#",
+          "quality": "7",
+          "symbol": "C♯7",
+          "notes": [
+            "C#",
+            "E#",
+            "G#",
+            "B"
+          ]
+        },
+        {
+          "root": "F#",
+          "quality": "m7",
+          "symbol": "F♯m7",
+          "notes": [
+            "F#",
+            "A",
+            "C#",
+            "E"
+          ]
+        }
+      ]
+    },
+    "Db": {
+      "major": [
+        {
+          "root": "Eb",
+          "quality": "m7",
+          "symbol": "E♭m7",
+          "notes": [
+            "Eb",
+            "Gb",
+            "Bb",
+            "Db"
+          ]
+        },
+        {
+          "root": "Ab",
+          "quality": "7",
+          "symbol": "A♭7",
+          "notes": [
+            "Ab",
+            "C",
+            "Eb",
+            "Gb"
+          ]
+        },
+        {
+          "root": "Db",
+          "quality": "maj7",
+          "symbol": "D♭maj7",
+          "notes": [
+            "Db",
+            "F",
+            "Ab",
+            "C"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "Eb",
+          "quality": "m7b5",
+          "symbol": "E♭m7♭5",
+          "notes": [
+            "Eb",
+            "Gb",
+            "Bbb",
+            "Db"
+          ]
+        },
+        {
+          "root": "Ab",
+          "quality": "7",
+          "symbol": "A♭7",
+          "notes": [
+            "Ab",
+            "C",
+            "Eb",
+            "Gb"
+          ]
+        },
+        {
+          "root": "Db",
+          "quality": "m7",
+          "symbol": "D♭m7",
+          "notes": [
+            "Db",
+            "Fb",
+            "Ab",
+            "Cb"
+          ]
+        }
+      ]
+    },
+    "Ab": {
+      "major": [
+        {
+          "root": "Bb",
+          "quality": "m7",
+          "symbol": "B♭m7",
+          "notes": [
+            "Bb",
+            "Db",
+            "F",
+            "Ab"
+          ]
+        },
+        {
+          "root": "Eb",
+          "quality": "7",
+          "symbol": "E♭7",
+          "notes": [
+            "Eb",
+            "G",
+            "Bb",
+            "Db"
+          ]
+        },
+        {
+          "root": "Ab",
+          "quality": "maj7",
+          "symbol": "A♭maj7",
+          "notes": [
+            "Ab",
+            "C",
+            "Eb",
+            "G"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "Bb",
+          "quality": "m7b5",
+          "symbol": "B♭m7♭5",
+          "notes": [
+            "Bb",
+            "Db",
+            "Fb",
+            "Ab"
+          ]
+        },
+        {
+          "root": "Eb",
+          "quality": "7",
+          "symbol": "E♭7",
+          "notes": [
+            "Eb",
+            "G",
+            "Bb",
+            "Db"
+          ]
+        },
+        {
+          "root": "Ab",
+          "quality": "m7",
+          "symbol": "A♭m7",
+          "notes": [
+            "Ab",
+            "Cb",
+            "Eb",
+            "Gb"
+          ]
+        }
+      ]
+    },
+    "Eb": {
+      "major": [
+        {
+          "root": "F",
+          "quality": "m7",
+          "symbol": "Fm7",
+          "notes": [
+            "F",
+            "Ab",
+            "C",
+            "Eb"
+          ]
+        },
+        {
+          "root": "Bb",
+          "quality": "7",
+          "symbol": "B♭7",
+          "notes": [
+            "Bb",
+            "D",
+            "F",
+            "Ab"
+          ]
+        },
+        {
+          "root": "Eb",
+          "quality": "maj7",
+          "symbol": "E♭maj7",
+          "notes": [
+            "Eb",
+            "G",
+            "Bb",
+            "D"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "F",
+          "quality": "m7b5",
+          "symbol": "Fm7♭5",
+          "notes": [
+            "F",
+            "Ab",
+            "Cb",
+            "Eb"
+          ]
+        },
+        {
+          "root": "Bb",
+          "quality": "7",
+          "symbol": "B♭7",
+          "notes": [
+            "Bb",
+            "D",
+            "F",
+            "Ab"
+          ]
+        },
+        {
+          "root": "Eb",
+          "quality": "m7",
+          "symbol": "E♭m7",
+          "notes": [
+            "Eb",
+            "Gb",
+            "Bb",
+            "Db"
+          ]
+        }
+      ]
+    },
+    "Bb": {
+      "major": [
+        {
+          "root": "C",
+          "quality": "m7",
+          "symbol": "Cm7",
+          "notes": [
+            "C",
+            "Eb",
+            "G",
+            "Bb"
+          ]
+        },
+        {
+          "root": "F",
+          "quality": "7",
+          "symbol": "F7",
+          "notes": [
+            "F",
+            "A",
+            "C",
+            "Eb"
+          ]
+        },
+        {
+          "root": "Bb",
+          "quality": "maj7",
+          "symbol": "B♭maj7",
+          "notes": [
+            "Bb",
+            "D",
+            "F",
+            "A"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "C",
+          "quality": "m7b5",
+          "symbol": "Cm7♭5",
+          "notes": [
+            "C",
+            "Eb",
+            "Gb",
+            "Bb"
+          ]
+        },
+        {
+          "root": "F",
+          "quality": "7",
+          "symbol": "F7",
+          "notes": [
+            "F",
+            "A",
+            "C",
+            "Eb"
+          ]
+        },
+        {
+          "root": "Bb",
+          "quality": "m7",
+          "symbol": "B♭m7",
+          "notes": [
+            "Bb",
+            "Db",
+            "F",
+            "Ab"
+          ]
+        }
+      ]
+    },
+    "F": {
+      "major": [
+        {
+          "root": "G",
+          "quality": "m7",
+          "symbol": "Gm7",
+          "notes": [
+            "G",
+            "Bb",
+            "D",
+            "F"
+          ]
+        },
+        {
+          "root": "C",
+          "quality": "7",
+          "symbol": "C7",
+          "notes": [
+            "C",
+            "E",
+            "G",
+            "Bb"
+          ]
+        },
+        {
+          "root": "F",
+          "quality": "maj7",
+          "symbol": "Fmaj7",
+          "notes": [
+            "F",
+            "A",
+            "C",
+            "E"
+          ]
+        }
+      ],
+      "minor": [
+        {
+          "root": "G",
+          "quality": "m7b5",
+          "symbol": "Gm7♭5",
+          "notes": [
+            "G",
+            "Bb",
+            "Db",
+            "F"
+          ]
+        },
+        {
+          "root": "C",
+          "quality": "7",
+          "symbol": "C7",
+          "notes": [
+            "C",
+            "E",
+            "G",
+            "Bb"
+          ]
+        },
+        {
+          "root": "F",
+          "quality": "m7",
+          "symbol": "Fm7",
+          "notes": [
+            "F",
+            "Ab",
+            "C",
+            "Eb"
+          ]
+        }
+      ]
+    }
+  },
+  "study": [
+    {
+      "number": 1,
+      "section": "A₁",
+      "chords": [
+        {
+          "root": "F",
+          "quality": "m7",
+          "symbol": "Fm7",
+          "notes": [
+            "F",
+            "Ab",
+            "C",
+            "Eb"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "section": "A₁",
+      "chords": [
+        {
+          "root": "Bb",
+          "quality": "7",
+          "symbol": "B♭7",
+          "notes": [
+            "Bb",
+            "D",
+            "F",
+            "Ab"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "section": "A₁",
+      "chords": [
+        {
+          "root": "Eb",
+          "quality": "maj7",
+          "symbol": "E♭maj7",
+          "notes": [
+            "Eb",
+            "G",
+            "Bb",
+            "D"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "section": "A₁",
+      "chords": [
+        {
+          "root": "Ab",
+          "quality": "maj7",
+          "symbol": "A♭maj7",
+          "notes": [
+            "Ab",
+            "C",
+            "Eb",
+            "G"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "section": "A₁",
+      "chords": [
+        {
+          "root": "D",
+          "quality": "m7b5",
+          "symbol": "Dm7♭5",
+          "notes": [
+            "D",
+            "F",
+            "Ab",
+            "C"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "section": "A₁",
+      "chords": [
+        {
+          "root": "G",
+          "quality": "7",
+          "symbol": "G7",
+          "notes": [
+            "G",
+            "B",
+            "D",
+            "F"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "section": "A₁",
+      "chords": [
+        {
+          "root": "C",
+          "quality": "m7",
+          "symbol": "Cm7",
+          "notes": [
+            "C",
+            "Eb",
+            "G",
+            "Bb"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "section": "A₁",
+      "chords": [
+        {
+          "root": "C",
+          "quality": "7",
+          "symbol": "C7",
+          "notes": [
+            "C",
+            "E",
+            "G",
+            "Bb"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "section": "A₂",
+      "chords": [
+        {
+          "root": "F",
+          "quality": "m7",
+          "symbol": "Fm7",
+          "notes": [
+            "F",
+            "Ab",
+            "C",
+            "Eb"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "section": "A₂",
+      "chords": [
+        {
+          "root": "Bb",
+          "quality": "7",
+          "symbol": "B♭7",
+          "notes": [
+            "Bb",
+            "D",
+            "F",
+            "Ab"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "section": "A₂",
+      "chords": [
+        {
+          "root": "Eb",
+          "quality": "maj7",
+          "symbol": "E♭maj7",
+          "notes": [
+            "Eb",
+            "G",
+            "Bb",
+            "D"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "section": "A₂",
+      "chords": [
+        {
+          "root": "Ab",
+          "quality": "maj7",
+          "symbol": "A♭maj7",
+          "notes": [
+            "Ab",
+            "C",
+            "Eb",
+            "G"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "section": "A₂",
+      "chords": [
+        {
+          "root": "D",
+          "quality": "m7b5",
+          "symbol": "Dm7♭5",
+          "notes": [
+            "D",
+            "F",
+            "Ab",
+            "C"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "section": "A₂",
+      "chords": [
+        {
+          "root": "G",
+          "quality": "7",
+          "symbol": "G7",
+          "notes": [
+            "G",
+            "B",
+            "D",
+            "F"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "section": "A₂",
+      "chords": [
+        {
+          "root": "C",
+          "quality": "m7",
+          "symbol": "Cm7",
+          "notes": [
+            "C",
+            "Eb",
+            "G",
+            "Bb"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "section": "A₂",
+      "chords": [
+        {
+          "root": "Eb",
+          "quality": "7",
+          "symbol": "E♭7",
+          "notes": [
+            "Eb",
+            "G",
+            "Bb",
+            "Db"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "section": "B",
+      "chords": [
+        {
+          "root": "Ab",
+          "quality": "maj7",
+          "symbol": "A♭maj7",
+          "notes": [
+            "Ab",
+            "C",
+            "Eb",
+            "G"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "section": "B",
+      "chords": [
+        {
+          "root": "Ab",
+          "quality": "maj7",
+          "symbol": "A♭maj7",
+          "notes": [
+            "Ab",
+            "C",
+            "Eb",
+            "G"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "section": "B",
+      "chords": [
+        {
+          "root": "Bb",
+          "quality": "m7",
+          "symbol": "B♭m7",
+          "notes": [
+            "Bb",
+            "Db",
+            "F",
+            "Ab"
+          ],
+          "beats": 2
+        },
+        {
+          "root": "Eb",
+          "quality": "7",
+          "symbol": "E♭7",
+          "notes": [
+            "Eb",
+            "G",
+            "Bb",
+            "Db"
+          ],
+          "beats": 2
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "section": "B",
+      "chords": [
+        {
+          "root": "Ab",
+          "quality": "maj7",
+          "symbol": "A♭maj7",
+          "notes": [
+            "Ab",
+            "C",
+            "Eb",
+            "G"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "section": "B",
+      "chords": [
+        {
+          "root": "G",
+          "quality": "m7b5",
+          "symbol": "Gm7♭5",
+          "notes": [
+            "G",
+            "Bb",
+            "Db",
+            "F"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "section": "B",
+      "chords": [
+        {
+          "root": "C",
+          "quality": "7",
+          "symbol": "C7",
+          "notes": [
+            "C",
+            "E",
+            "G",
+            "Bb"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "section": "B",
+      "chords": [
+        {
+          "root": "F",
+          "quality": "m7",
+          "symbol": "Fm7",
+          "notes": [
+            "F",
+            "Ab",
+            "C",
+            "Eb"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "section": "B",
+      "chords": [
+        {
+          "root": "Bb",
+          "quality": "7",
+          "symbol": "B♭7",
+          "notes": [
+            "Bb",
+            "D",
+            "F",
+            "Ab"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "section": "A₃",
+      "chords": [
+        {
+          "root": "F",
+          "quality": "m7",
+          "symbol": "Fm7",
+          "notes": [
+            "F",
+            "Ab",
+            "C",
+            "Eb"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "section": "A₃",
+      "chords": [
+        {
+          "root": "Bb",
+          "quality": "7",
+          "symbol": "B♭7",
+          "notes": [
+            "Bb",
+            "D",
+            "F",
+            "Ab"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "section": "A₃",
+      "chords": [
+        {
+          "root": "Eb",
+          "quality": "maj7",
+          "symbol": "E♭maj7",
+          "notes": [
+            "Eb",
+            "G",
+            "Bb",
+            "D"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "section": "A₃",
+      "chords": [
+        {
+          "root": "Ab",
+          "quality": "maj7",
+          "symbol": "A♭maj7",
+          "notes": [
+            "Ab",
+            "C",
+            "Eb",
+            "G"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "section": "A₃",
+      "chords": [
+        {
+          "root": "D",
+          "quality": "m7b5",
+          "symbol": "Dm7♭5",
+          "notes": [
+            "D",
+            "F",
+            "Ab",
+            "C"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "section": "A₃",
+      "chords": [
+        {
+          "root": "G",
+          "quality": "7",
+          "symbol": "G7",
+          "notes": [
+            "G",
+            "B",
+            "D",
+            "F"
+          ],
+          "beats": 4
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "section": "A₃",
+      "chords": [
+        {
+          "root": "C",
+          "quality": "m7",
+          "symbol": "Cm7",
+          "notes": [
+            "C",
+            "Eb",
+            "G",
+            "Bb"
+          ],
+          "beats": 2
+        },
+        {
+          "root": "F",
+          "quality": "m7",
+          "symbol": "Fm7",
+          "notes": [
+            "F",
+            "Ab",
+            "C",
+            "Eb"
+          ],
+          "beats": 1
+        },
+        {
+          "root": "Bb",
+          "quality": "7",
+          "symbol": "B♭7",
+          "notes": [
+            "Bb",
+            "D",
+            "F",
+            "Ab"
+          ],
+          "beats": 1
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "section": "A₃",
+      "chords": [
+        {
+          "root": "Eb",
+          "quality": "maj7",
+          "symbol": "E♭maj7",
+          "notes": [
+            "Eb",
+            "G",
+            "Bb",
+            "D"
+          ],
+          "beats": 4
+        }
+      ]
+    }
+  ]
+}

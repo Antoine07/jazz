@@ -1,38 +1,52 @@
-# Le labo jazz — Body and Soul
+# Le labo jazz — harmonie progressive pour saxophone ténor Si♭
 
-Cours progressif d’harmonie jazz, inspiré de l’organisation du site « Le labo maths » fourni.
+**Ouvrir [le parcours](docs/index.html)** dans un navigateur. Le dossier `docs/` contient les pages, les schémas, les styles et les outils audio ; il fonctionne hors ligne, sauf les liens vers les sources.
 
-**Ouvrir [le cours](docs/index.html)** dans un navigateur. Le dossier `docs/` est autonome et fonctionne hors ligne, hors liens vers les sources.
+## Parcours en 13 étapes
 
-- Harmonie, accords, II–V–I, notes guides et forme AABA.
-- Étude des extraits lisibles de votre partition de Body and Soul.
-- Triolets de noires et liaisons d’après `images/rythme.png`, lecteur et variations.
-- Gammes blues majeures et mineures : notes, clavier et écoute dans douze tonalités.
-- Cycle des quintes interactif, gammes, armures et cadences.
-- 17 exercices progressifs avec indices et corrections, QCM de 8 questions et projet fil rouge.
-- Mode présentation, impression / PDF, progression enregistrée dans le navigateur.
+1. Ténor Si♭ : notes écrites, sons réels et accompagnement.
+2. Notes, intervalles et degrés.
+3. Gammes majeure, mineure naturelle, harmonique et mélodique jazz.
+4. Accords, harmonisation et arpèges.
+5. II–V–I majeurs : accords et notes dans les douze tons écrits.
+6. ii–V–i mineurs : demi-diminué, dominante, sensible et accords d’arrivée.
+7. Tierces, septièmes, notes guides et premières phrases.
+8. Structures : AABA, ABAC, blues, extraits d’Autumn Leaves et de Misty.
+9. Body and Soul : A, relative mineure et pont en notation ténor.
+10. Rythme : huit niveaux progressifs, triolets de noires, liaisons et silences.
+11. Gammes blues majeure et mineure, écoute et application.
+12. Cycle des quintes, cadences majeures et mineures, transposition.
+13. Projet AABA, QCM et révision.
 
-## Consulter avec un serveur local
+Le cours propose 42 exercices avec indices et corrections, un QCM de 10 questions et une étude originale AABA de 32 mesures. Chaque chapitre précise les acquis à vérifier. Le projet conserve le même carnet et la même grille au fil des étapes.
+
+## Convention instrumentale
+
+Toutes les notes et tous les accords de travail sont **écrits pour le saxophone ténor en Si♭**. Les correspondances concert sont signalées séparément. Instrument en Si♭ ne signifie pas tonalité unique de Si♭ : le parcours travaille les douze tons.
+
+Le ténor sonne une neuvième majeure sous la note écrite. Les lecteurs de gammes et de cadences appliquent cette transposition (−14 demi-tons). Les schémas de clavier repèrent les notes écrites ; ils ne représentent pas les touches à jouer au piano pour accompagner.
+
+Body and Soul est étudié en Mi♭ majeur écrit, correspondant à Ré♭ concert. La réduction de huit mesures sert au travail de A. La grille AABA originale de 32 mesures du chapitre Structure est une composition pédagogique distincte du standard.
+
+## Consultation et construction
+
+Aucune dépendance à installer. Python 3 et Node.js servent aux commandes suivantes :
 
 ```sh
 npm run preview
 ```
 
-Puis ouvrir <http://localhost:8090>. Aucune installation de dépendances n’est nécessaire. Python 3 et Node.js sont requis pour les commandes de construction et de vérification.
-
-## Construire et vérifier
+Ouvrir <http://localhost:8090>.
 
 ```sh
 npm run build
 npm run check
 ```
 
-`scripts/build.py` génère les pages dans `docs/` et leur copie de publication dans `dist/`. Les styles et les interactions sont conservés dans `docs/assets/`. Les photos originales restent dans `images/` ; les aperçus PNG présents dans le cours proviennent de leur image de prévisualisation.
+`scripts/build.py` collecte les contenus, `scripts/progression.py` organise le parcours et `scripts/music_theory.py` produit les références de notes. Les pages sont générées dans `docs/`, puis copiées dans `dist/` pour publication. Les styles, interactions et aperçus des partitions restent dans `docs/assets/`.
 
-## Conventions instrumentales
+Les vérifications portent sur les liens et ancres, les conventions de notation, les notes des gammes et accords, les 32 mesures de l’étude, les durées rythmiques, les silences, les liaisons et la transposition audio. Elles ne remplacent pas une écoute ni une vérification visuelle dans un navigateur.
 
-La photo de Body and Soul est notée en Mi♭. Le cours distingue cette notation de la version habituelle en Ré♭ concert. Si cette photo est bien une partie de saxophone ténor Si♭, les deux correspondent ; l’édition reste à confirmer. Les outils de gammes et du cycle ne transposent pas automatiquement pour un instrument.
+## Sources
 
-L’audio doit être démarré par un clic. Le métronome indique le tempo à la noire ; une mesure de décompte précède chaque boucle. Le modèle de swing 2:1 est un exercice, et les triolets de noires ne doivent pas être confondus avec des triolets de croches.
-
-Les sources musicales sont liées dans [Exercices et ressources](docs/pratique.html#sources).
+Voir les [références du cours](docs/pratique.html#sources). Les images originales restent dans `images/`. Les aperçus PNG du cours sont des conversions de leurs images de prévisualisation.

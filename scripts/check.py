@@ -29,12 +29,18 @@ for file,p in pages.items():
             other=pages.get(target)
             if other and url.fragment not in other.ids:errors.append(f'{file.name}: missing fragment {raw}')
 count=sum(f.read_text().count('class="exercise"') for f in pages)
-if count!=17:errors.append(f'Expected 17 exercises, found {count}')
+if count!=42:errors.append(f'Expected 42 exercises, found {count}')
 quiz=(root/'pratique.html').read_text()
-if quiz.count('<fieldset')!=8:errors.append('Expected eight quiz questions')
-if len(pages)!=7:errors.append('Expected seven pages')
+if quiz.count('<fieldset')!=10:errors.append('Expected ten quiz questions')
+if len(pages)!=14:errors.append('Expected fourteen pages')
+for file,p in pages.items():
+    content=file.read_text()
+    if file.name!='index.html' and 'Ténor Si♭ · notes et accords écrits' not in content:errors.append(f'{file.name}: missing tenor convention')
+    if any(phrase in content.lower() for phrase in ['votre photo','votre feuille','notation photo']):errors.append(f'{file.name}: conversational wording')
 for f in root.rglob('*'):
-    if f.is_file() and f.suffix in ['.html','.css','.js']:
-        if not (root.parent/'dist'/f.relative_to(root)).exists():errors.append(f'Missing deployment copy: {f}')
+    if f.is_file() and f.suffix in ['.html','.css','.js','.json']:
+        copy=root.parent/'dist'/f.relative_to(root)
+        if not copy.exists():errors.append(f'Missing deployment copy: {f}')
+        elif copy.read_bytes()!=f.read_bytes():errors.append(f'Deployment copy differs: {f}')
 if errors:raise SystemExit('\n'.join(errors))
-print(f'OK : {len(pages)} pages, {count} exercices, 8 QCM, liens et ancres internes valides.')
+print(f'OK : {len(pages)} pages, {count} exercices, 10 QCM, liens et ancres internes valides.')
