@@ -3,13 +3,20 @@ const elements=new Map(), scheduled=[],intervals=new Map();let timerId=0;
 class FakeAudioContext{
  constructor(){this.currentTime=0;this.destination={};FakeAudioContext.instance=this;}
  resume(){return Promise.resolve();}
- createOscillator(){const o={frequency:{value:0},connect(){},disconnect(){},start(time){scheduled.push({midi:69+12*Math.log2(o.frequency.value/440),time,osc:o});},stop(time){if(time!==undefined)o.end=time;}};return o;}
- createGain(){return {gain:{setValueAtTime(){},linearRampToValueAtTime(){},exponentialRampToValueAtTime(){}},connect(){},disconnect(){}};}
+ createOscillator(){const o={frequency:{value:0},setPeriodicWave(){},connect(){},disconnect(){},start(time){scheduled.push({kind:'note',midi:69+12*Math.log2(o.frequency.value/440),time,osc:o});},stop(time){if(time!==undefined)o.end=time;}};return o;}
+ createBuffer(channels,length,rate){const data=Array.from({length:channels},()=>new Float32Array(length));return {length,sampleRate:rate,duration:length/rate,getChannelData:i=>data[i]};}
+ createBufferSource(){const o={playbackRate:{value:1},buffer:null,connect(){},disconnect(){},start(time){const kind=o.buffer.duration>1?'note':'click';scheduled.push({kind,midi:kind==='note'?60+12*Math.log2(o.playbackRate.value):null,time,osc:o});},stop(time){if(time!==undefined)o.end=time;}};return o;}
+ createGain(){return {gain:{value:1,setValueAtTime(){},setTargetAtTime(){},linearRampToValueAtTime(){},exponentialRampToValueAtTime(){}},connect(){},disconnect(){}};}
+ createDynamicsCompressor(){return {threshold:{},knee:{},ratio:{},attack:{},release:{},connect(){}};}
+ createPeriodicWave(){return {};}
 }
 const sandbox={console,document:{querySelector:s=>elements.get(s)||null,querySelectorAll:()=>[],addEventListener(){}},window:{AudioContext:FakeAudioContext,addEventListener(){}},setTimeout:()=>++timerId,clearTimeout(){},setInterval:f=>{const id=++timerId;intervals.set(id,f);return id;},clearInterval:id=>intervals.delete(id)};
 vm.createContext(sandbox);
+vm.runInContext(fs.readFileSync('docs/assets/audio.js','utf8'),sandbox);
+vm.runInContext(fs.readFileSync('docs/assets/workshops.js','utf8'),sandbox);
 vm.runInContext(fs.readFileSync('docs/assets/rhythms.js','utf8'),sandbox);
 vm.runInContext(fs.readFileSync('docs/assets/app.js','utf8')+'\nglobalThis.api={scale,pc,patterns,eventsOf,startRhythm,stopSound,cadenceOf,concertNote,writtenToConcertMidi,ascendingWrittenMidi,playScaleTool,playCadenceTool,rhythmSVG,updateRhythm};',sandbox);
+vm.runInContext(fs.readFileSync('docs/assets/listening.js','utf8'),sandbox);
 const a=sandbox.api,plain=x=>JSON.parse(JSON.stringify(x));
 assert.deepEqual(plain(a.scale('Db')),['Db','Eb','F','Gb','Ab','Bb','C']);
 assert.deepEqual(plain(a.scale('F#')),['F#','G#','A#','B','C#','D#','E#']);
@@ -50,6 +57,14 @@ assert.equal(a.eventsOf(a.patterns.crossbar).find(e=>e.beat===3).soundingDuratio
 assert.equal(a.patterns.compound.pulses,2);assert.equal(a.patterns.waltz.pulses,3);
 assert(a.rhythmSVG(a.patterns.whole).includes('fill="#fff"'),'Whole note has an open head');
 assert(!a.rhythmSVG(a.patterns.quarters).includes('fill="#fff"'),'Quarter notes have filled heads');
+const sound=sandbox.window.JazzSound;
+const piano=sound.pianoSamples();assert(piano.length>70000);assert(piano.every(Number.isFinite));
+const peak=Math.max(...piano);assert(peak>.5&&peak<=.73,'Piano sample has useful headroom');
+for(const style of ['wood','felt'])for(const accent of [false,true]){const data=sound.clickSamples(accent,style);assert(data.every(Number.isFinite));assert(Math.max(...data.map(Math.abs))<.8,'Click does not clip');assert(data.length>1000);}
+const raw=sound.clickSamples(false,'wood');const rms=Math.sqrt(raw.reduce((sum,v)=>sum+v*v,0)/raw.length);assert(rms>.03,'Click has an audible body');
+for(const prefix of ['interval','chord','guide','form','body']){
+ const plan=sandbox.window.JazzListening.makePlan(prefix);assert(plan.events.length>0);assert(plan.events.every(e=>Number.isFinite(e.midi)&&e.duration>0));assert(!/undefined|NaN/.test(sandbox.window.JazzListening.notationSVG(plan)));
+}
 (async()=>{
  for(const [pattern,expectedCount] of [['whole',1],['halves',2],['dotted-quarter',4],['dotted-eighths',8],['ties',4],['untied',5],['rests',1],['whole-rest',0],['crossbar',9],['waltz',2],['compound',4]]){
   scheduled.length=0;const p=a.patterns[pattern];
@@ -57,11 +72,11 @@ assert(!a.rhythmSVG(a.patterns.quarters).includes('fill="#fff"'),'Quarter notes 
   elements.set('#rhythm-start',{textContent:'',setAttribute(){}});elements.set('#rhythm-status',{textContent:''});
   await a.startRhythm();const ctx=FakeAudioContext.instance;assert.equal(scheduled.length,p.pulses,'One measure of count-in: '+pattern);
   const scheduler=[...intervals.values()][0];ctx.currentTime=p.pulses+.1;scheduler();
-  const notes=scheduled.filter(x=>Math.abs(x.midi-58)<1e-8);assert.equal(notes.length,expectedCount,pattern+' audible attacks');
+  const notes=scheduled.filter(x=>x.kind==='note');assert.equal(notes.length,expectedCount,pattern+' audible attacks');
   if(notes.length&&pattern!=='rests')assert(Math.abs(notes[0].time-(p.pulses+.12))<1e-8,'Pattern starts after count-in');
-  if(pattern==='ties')assert(Math.abs(notes[1].osc.end-notes[1].time-(1.5-.018+.02))<1e-8,'Eighth tied to quarter lasts 1.5 beats');
-  if(pattern==='crossbar')assert(Math.abs(notes[4].osc.end-notes[4].time-(2-.018+.02))<1e-8,'Tie sustains across the bar');
-  if(pattern==='compound')assert(Math.abs(notes[3].osc.end-notes[3].time-(1-.018+.02))<1e-8,'Dotted quarter is one compound pulse');
+  if(pattern==='ties')assert(Math.abs(notes[1].osc.end-notes[1].time-(1.5-.018+.045+.01))<1e-8,'Eighth tied to quarter lasts 1.5 beats');
+  if(pattern==='crossbar')assert(Math.abs(notes[4].osc.end-notes[4].time-(2-.018+.045+.01))<1e-8,'Tie sustains across the bar');
+  if(pattern==='compound')assert(Math.abs(notes[3].osc.end-notes[3].time-(1-.018+.045+.01))<1e-8,'Dotted quarter is one compound pulse');
   a.stopSound();assert.equal(intervals.size,0,'Stop clears scheduler');ctx.currentTime=0;
  }
  const metroOption={disabled:false};

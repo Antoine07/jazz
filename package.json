@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "python3 scripts/build.py",
-    "check": "node --check docs/assets/app.js && python3 scripts/check.py && node scripts/check-music.cjs",
+    "check": "node --check docs/assets/app.js && node --check docs/assets/audio.js && node --check docs/assets/listening.js && python3 scripts/check.py && node scripts/check-music.cjs && node scripts/check-workshops.cjs",
     "preview": "python3 -m http.server 8090 --directory docs"
   }
 }

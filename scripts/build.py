@@ -14,7 +14,7 @@ def exercise(num,title,objective,prereq,statement,deliverable,criteria,hints,cor
     return f'<div class="exercise"><span class="eyebrow">Exercice {num}</span><h3>{title}</h3><p><b>Objectif.</b> {objective}</p><p class="meta">Prérequis : {prereq}</p><p>{statement}</p><p><b>À produire.</b> {deliverable}</p><p><b>Réussite.</b> {criteria}</p><details><summary>Un premier indice</summary><div>{hints[0]}<details><summary>Un indice supplémentaire</summary><div>{hints[1]}</div></details></div></details><details class="correction"><summary>Voir la correction expliquée</summary><div>{correction}</div></details></div>'
 def shell(title,body,current=''):
     nav='<a href="index.html#parcours"'+(' aria-current="page"' if current=='index' else '')+'>Le parcours</a><a href="rythme.html"'+(' aria-current="page"' if current=='rythme' else '')+'>Le rythme</a><a href="pratique.html"'+(' aria-current="page"' if current=='pratique' else '')+'>Exercices & ressources ↗</a>'
-    return f'<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f8f2"><meta name="description" content="Un cours progressif d’harmonie jazz autour de Body and Soul : accords, lecture rythmique progressive, gammes et cycle des quintes."><title>{title} · Le labo jazz</title><link rel="stylesheet" href="assets/style.css"><script defer src="assets/rhythms.js"></script><script defer src="assets/app.js"></script></head><body><a class="skip" href="#contenu">Aller au contenu</a><header class="site-header"><a class="brand" href="index.html"><span class="logo" aria-hidden="true">j.</span> Le labo jazz <small>/ L’harmonie en pratique</small></a><nav aria-label="Navigation principale">{nav}</nav></header>{body}<footer class="footer"><span>Le labo jazz · Comprendre. Entendre. Jouer.</span><span>Notation écrite pour saxophone ténor Si♭ · <a href="pratique.html#sources">Sources</a></span></footer></body></html>'
+    return f'<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f8f2"><meta name="description" content="Un cours progressif d’harmonie jazz autour de Body and Soul : accords, lecture rythmique progressive, gammes et cycle des quintes."><title>{title} · Le labo jazz</title><link rel="stylesheet" href="assets/style.css"><script defer src="assets/rhythms.js"></script><script defer src="assets/audio.js"></script><script defer src="assets/workshops.js"></script><script defer src="assets/app.js"></script><script defer src="assets/listening.js"></script></head><body><a class="skip" href="#contenu">Aller au contenu</a><header class="site-header"><a class="brand" href="index.html"><span class="logo" aria-hidden="true">j.</span> Le labo jazz <small>/ L’harmonie en pratique</small></a><nav aria-label="Navigation principale">{nav}</nav></header>{body}<footer class="footer"><span>Le labo jazz · Comprendre. Entendre. Jouer.</span><span>Notation écrite pour saxophone ténor Si♭ · <a href="pratique.html#sources">Sources</a></span></footer></body></html>'
 def page(slug,sections):
     ch=next(c for c in chapters if c[0]==slug);i=chapters.index(ch)
     toc='<aside class="toc"><p class="eyebrow">Dans ce chapitre</p><nav aria-label="Sommaire du chapitre">'+''.join(f'<a href="#{id}">{title}</a>' for id,title,_ in sections)+'</nav></aside>'
@@ -130,11 +130,23 @@ build_progression(globals())
 (OUT/'.nojekyll').touch()
 (OUT/'README.md').write_text('''# Le labo jazz — Body and Soul
 
-Parcours progressif en 13 chapitres pour le saxophone ténor en Si♭. Ouvrir `index.html` dans un navigateur. Le dossier est autonome : CSS, JavaScript et images sont inclus. Les outils audio utilisent Web Audio et démarrent après un clic. Les liens de sources nécessitent Internet.
+Parcours progressif en 13 chapitres pour le saxophone ténor en Si♭. **[Ouvrir les pages du cours](index.html)** dans un navigateur. Le dossier est autonome : CSS, JavaScript et images sont inclus. Les outils audio utilisent Web Audio et démarrent après un clic. Les liens de sources nécessitent Internet.
 
 ## Parcours
 
-Ténor Si♭ → notes et degrés → gammes → accords → II–V–I majeur → II–V–I mineur → notes guides → structures → Body and Soul → rythme → blues → cycle des quintes → projet.
+1. [Ténor Si♭ : écrit et concert](tenor.html)
+2. [Notes, intervalles et degrés](bases.html)
+3. [Gammes](gammes.html)
+4. [Accords et arpèges](accords.html)
+5. [II–V–I majeurs](ii-v-i-majeur.html)
+6. [II–V–I mineurs](ii-v-i-mineur.html)
+7. [Notes guides](notes-guides.html)
+8. [Structure des morceaux](structure.html)
+9. [Body and Soul](body-and-soul.html)
+10. [Rythme : lecture et écoute](rythme.html)
+11. [Gammes blues](blues.html)
+12. [Cycle des quintes](cycle.html)
+13. [Projet, exercices et révision](pratique.html)
 
 Les pages proposent lecture continue, mode présentation et impression / PDF avec corrections ouvertes. La progression est enregistrée localement dans le navigateur quand son stockage est disponible.
 
