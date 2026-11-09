@@ -3,3 +3,6 @@
 /* Ateliers de gammes et de cadences : conserver la lisibilité des symboles. */
 .tool .cadence{grid-template-columns:repeat(3,minmax(0,1fr))}.tool .cadence .chord{min-width:0}.tool .cadence strong{font-size:clamp(.9rem,2.4vw,1.35rem)}.tool .cadence .chord span{overflow-wrap:anywhere}#circle-minor-chords p{font-size:.8rem;margin-bottom:7px}.tenor-note{font-size:.76rem;color:var(--green);border-left:2px solid #a8bd90;padding-left:12px;margin:18px 0 0}
 @media(max-width:470px){.tool .cadence{grid-template-columns:1fr}.tool .cadence .chord{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:12px}.tool .cadence .chord strong{margin:0}.tool .cadence .chord span{flex-basis:100%}}
+/* Lecture rythmique : figures ouvertes ou pleines, hampes, points et liaisons. */
+.rhythm-example{margin:20px 0 25px;background:#f7f8f2;border:1px solid var(--line);padding:14px;border-radius:12px}.rhythm-example figcaption{font-size:.76rem;color:var(--muted);margin-top:6px}.rhythm-svg{min-width:620px}.beat-lights{grid-template-columns:repeat(4,1fr)}
+@media print{.rhythm-svg{min-width:0}.rhythm-example{break-inside:avoid}.diagram-scroll{overflow:visible}}

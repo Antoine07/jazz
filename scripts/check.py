@@ -29,7 +29,7 @@ for file,p in pages.items():
             other=pages.get(target)
             if other and url.fragment not in other.ids:errors.append(f'{file.name}: missing fragment {raw}')
 count=sum(f.read_text().count('class="exercise"') for f in pages)
-if count!=42:errors.append(f'Expected 42 exercises, found {count}')
+if count!=47:errors.append(f'Expected 47 exercises, found {count}')
 quiz=(root/'pratique.html').read_text()
 if quiz.count('<fieldset')!=10:errors.append('Expected ten quiz questions')
 if len(pages)!=14:errors.append('Expected fourteen pages')

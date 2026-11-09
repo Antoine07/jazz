@@ -13,12 +13,12 @@
 7. Tierces, septièmes, notes guides et premières phrases.
 8. Structures : AABA, ABAC, blues, extraits d’Autumn Leaves et de Misty.
 9. Body and Soul : A, relative mineure et pont en notation ténor.
-10. Rythme : huit niveaux progressifs, triolets de noires, liaisons et silences.
+10. Rythme : treize exercices progressifs, rondes, blanches, noires, croches, doubles croches, valeurs pointées, silences, liaisons et triolets.
 11. Gammes blues majeure et mineure, écoute et application.
 12. Cycle des quintes, cadences majeures et mineures, transposition.
 13. Projet AABA, QCM et révision.
 
-Le cours propose 42 exercices avec indices et corrections, un QCM de 10 questions et une étude originale AABA de 32 mesures. Chaque chapitre précise les acquis à vérifier. Le projet conserve le même carnet et la même grille au fil des étapes.
+Le cours propose 47 exercices avec indices et corrections, un QCM de 10 questions et une étude originale AABA de 32 mesures. Chaque chapitre précise les acquis à vérifier. Le projet conserve le même carnet et la même grille au fil des étapes.
 
 ## Convention instrumentale
 
@@ -43,7 +43,7 @@ npm run build
 npm run check
 ```
 
-`scripts/build.py` collecte les contenus, `scripts/progression.py` organise le parcours et `scripts/music_theory.py` produit les références de notes. Les pages sont générées dans `docs/`, puis copiées dans `dist/` pour publication. Les styles, interactions et aperçus des partitions restent dans `docs/assets/`.
+`scripts/build.py` collecte les contenus, `scripts/progression.py` organise le parcours et `scripts/music_theory.py` produit les références de notes. `scripts/rhythm_course.py` définit les exemples rythmiques, leurs figures et leurs durées exactes. Les pages sont générées dans `docs/`, puis copiées dans `dist/` pour publication. Les styles, interactions et aperçus des partitions restent dans `docs/assets/`.
 
 Les vérifications portent sur les liens et ancres, les conventions de notation, les notes des gammes et accords, les 32 mesures de l’étude, les durées rythmiques, les silences, les liaisons et la transposition audio. Elles ne remplacent pas une écoute ni une vérification visuelle dans un navigateur.
 
